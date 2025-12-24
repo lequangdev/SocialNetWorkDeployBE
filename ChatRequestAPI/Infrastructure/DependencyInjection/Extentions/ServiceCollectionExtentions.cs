@@ -158,7 +158,6 @@ namespace Infrastructure.DependencyInjection.Extentions
             var redisConfiguration = new RedisConfiguration();
             configuration.GetSection("RedisConfiguration").Bind(redisConfiguration);
 
-            // 🔑 OVERRIDE bằng REDIS_URL nếu có
             var redisFromEnv = Environment.GetEnvironmentVariable("REDIS_URL");
             if (!string.IsNullOrEmpty(redisFromEnv))
             {
@@ -167,11 +166,10 @@ namespace Infrastructure.DependencyInjection.Extentions
 
             services.AddSingleton(redisConfiguration);
 
-            // ✅ Cấu hình an toàn cho cloud
             services.AddSingleton<IConnectionMultiplexer>(_ =>
             {
                 var options = ConfigurationOptions.Parse(redisConfiguration.ConnectionString);
-                options.AbortOnConnectFail = false; // QUAN TRỌNG
+                options.AbortOnConnectFail = false;
                 return ConnectionMultiplexer.Connect(options);
             });
 
