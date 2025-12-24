@@ -3,25 +3,25 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy tất cả các project trước (để tránh restore lại nhiều lần)
-COPY backend/ChatRequestAPI/ChatAPI/ChatAPI.csproj ChatAPI/
-COPY backend/ChatRequestAPI/Infrastructure/Infrastructure.csproj Infrastructure/
-COPY backend/ChatRequestAPI/DTO/DTO.csproj DTO/
-COPY backend/ChatRequestAPI/Domain/Domain.csproj Domain/
-COPY backend/ChatRequestAPI/ServiceLayer/ServiceLayer.csproj ServiceLayer/
-COPY backend/ChatRequestAPI/DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
-COPY backend/ChatRequestAPI/HostBase/HostBase.csproj HostBase/
+COPY ChatRequestAPI/ChatAPI/ChatAPI.csproj ChatAPI/
+COPY ChatRequestAPI/Infrastructure/Infrastructure.csproj Infrastructure/
+COPY ChatRequestAPI/DTO/DTO.csproj DTO/
+COPY ChatRequestAPI/Domain/Domain.csproj Domain/
+COPY ChatRequestAPI/ServiceLayer/ServiceLayer.csproj ServiceLayer/
+COPY ChatRequestAPI/DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
+COPY ChatRequestAPI/HostBase/HostBase.csproj HostBase/
 
 # Restore chỉ project này
 RUN dotnet restore ChatAPI/ChatAPI.csproj
 
 # Copy source code
-COPY backend/ChatRequestAPI/ChatAPI/ ChatAPI/
-COPY backend/ChatRequestAPI/Infrastructure/ Infrastructure/
-COPY backend/ChatRequestAPI/DTO/ DTO/
-COPY backend/ChatRequestAPI/Domain/ Domain/
-COPY backend/ChatRequestAPI/ServiceLayer/ ServiceLayer/
-COPY backend/ChatRequestAPI/DataAccessLayer/ DataAccessLayer/
-COPY backend/ChatRequestAPI/HostBase/ HostBase/
+COPY ChatRequestAPI/ChatAPI/ ChatAPI/
+COPY ChatRequestAPI/Infrastructure/ Infrastructure/
+COPY ChatRequestAPI/DTO/ DTO/
+COPY ChatRequestAPI/Domain/ Domain/
+COPY ChatRequestAPI/ServiceLayer/ ServiceLayer/
+COPY ChatRequestAPI/DataAccessLayer/ DataAccessLayer/
+COPY ChatRequestAPI/HostBase/ HostBase/
 
 WORKDIR /src/ChatAPI
 RUN dotnet publish -c Release -o /app/publish 
