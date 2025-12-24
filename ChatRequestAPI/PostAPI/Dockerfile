@@ -3,25 +3,25 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy tất cả các project trước (để tránh restore lại nhiều lần)
-COPY ChatRequestAPI/PostAPI/PostAPI.csproj PostAPI/
-COPY ChatRequestAPI/Infrastructure/Infrastructure.csproj Infrastructure/
-COPY ChatRequestAPI/DTO/DTO.csproj DTO/
-COPY ChatRequestAPI/Domain/Domain.csproj Domain/
-COPY ChatRequestAPI/ServiceLayer/ServiceLayer.csproj ServiceLayer/
-COPY ChatRequestAPI/DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
-COPY ChatRequestAPI/HostBase/HostBase.csproj HostBase/
+COPY PostAPI/PostAPI.csproj PostAPI/
+COPY Infrastructure/Infrastructure.csproj Infrastructure/
+COPY DTO/DTO.csproj DTO/
+COPY Domain/Domain.csproj Domain/
+COPY ServiceLayer/ServiceLayer.csproj ServiceLayer/
+COPY DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
+COPY HostBase/HostBase.csproj HostBase/
 
 # Restore chỉ project này
 RUN dotnet restore PostAPI/PostAPI.csproj
 
 # Copy toàn bộ source code
-COPY ChatRequestAPI/PostAPI/ PostAPI/
-COPY ChatRequestAPI/Infrastructure/ Infrastructure/
-COPY ChatRequestAPI/DTO/ DTO/
-COPY ChatRequestAPI/Domain/ Domain/
-COPY ChatRequestAPI/ServiceLayer/ ServiceLayer/
-COPY ChatRequestAPI/DataAccessLayer/ DataAccessLayer/
-COPY ChatRequestAPI/HostBase/ HostBase/
+COPY PostAPI/ PostAPI/
+COPY Infrastructure/ Infrastructure/
+COPY DTO/ DTO/
+COPY Domain/ Domain/
+COPY ServiceLayer/ ServiceLayer/
+COPY DataAccessLayer/ DataAccessLayer/
+COPY HostBase/ HostBase/
 
 WORKDIR /src/PostAPI
 RUN dotnet publish -c Release -o /app/publish
