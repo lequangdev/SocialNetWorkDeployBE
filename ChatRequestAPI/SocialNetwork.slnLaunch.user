@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AuthAPI\\AuthAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PostAPI\\PostAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ChatAPI\\ChatAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ReverseProxy\\ReverseProxy.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

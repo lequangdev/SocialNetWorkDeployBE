@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Domain;
+using Microsoft.EntityFrameworkCore;
+
+namespace DataAccessLayer.EF_core
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public DbSet<UserEntity> user { get; set; }
+        public DbSet<MessageEntity> Message { get; set; }
+        public DbSet<Room_chatEntity> room_chat { get; set; }
+        public DbSet<Room_userEntity> room_user { get; set; }
+        public DbSet<FriendshipEntity> friendship { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<UserEntity>(b =>
+            {
+                b.ToTable("Users");
+                b.HasKey(u => u.user_id);
+
+                b.Property(u => u.user_fullName).HasMaxLength(200).IsRequired(false);
+                b.Property(u => u.phone_number).HasMaxLength(20).IsRequired(false);
+                b.Property(u => u.user_account).HasMaxLength(100).IsRequired(false);
+                b.Property(u => u.user_password).HasMaxLength(200).IsRequired(false);
+                b.Property(u => u.user_avatar).HasMaxLength(500).IsRequired(false);
+                b.Property(u => u.created_at).HasColumnType("datetime2");
+                b.Property(u => u.modified_at).HasColumnType("datetime2");
+
+                // User 1 - N Room_user
+                b.HasMany(u => u.Room_user)
+                    .WithOne(ru => ru.user)
+                    .HasForeignKey(ru => ru.user_id)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Room_chatEntity>(b =>
+            {
+                b.ToTable("RoomChats");
+                b.HasKey(r => r.room_id);
+
+                b.Property(r => r.room_name).HasMaxLength(200).IsRequired(false);
+                b.Property(r => r.room_private).HasMaxLength(10).IsRequired(false);
+                b.Property(r => r.created_at).HasColumnType("datetime2");
+                b.Property(r => r.modified_at).HasColumnType("datetime2");
+            });
+
+            modelBuilder.Entity<Room_userEntity>(b =>
+            {
+                b.ToTable("RoomUsers");
+                b.HasKey(ru => ru.room_user_id);
+
+                b.Property(ru => ru.created_at).HasColumnType("datetime2");
+                b.Property(ru => ru.modified_at).HasColumnType("datetime2");
+
+                b.HasOne(ru => ru.room_chat)
+                    .WithMany()
+                    .HasForeignKey(ru => ru.room_id)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                b.HasOne(ru => ru.user)
+                    .WithMany(u => u.Room_user)
+                    .HasForeignKey(ru => ru.user_id)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<MessageEntity>(b =>
+            {
+                b.ToTable("Messages");
+                b.HasKey(m => m.message_id);
+
+                b.Property(m => m.message_content).HasMaxLength(4000).IsRequired(false);
+                b.Property(m => m.message_type).HasMaxLength(50).IsRequired(false);
+                b.Property(m => m.message_status).HasDefaultValue(0);
+                b.Property(m => m.created_at).HasColumnType("datetime2");
+                b.Property(m => m.modified_at).HasColumnType("datetime2");
+
+                // FK -> User (nullable)
+                b.HasOne<UserEntity>()
+                    .WithMany()
+                    .HasForeignKey(m => m.user_id)
+                    .OnDelete(DeleteBehavior.SetNull);
+
+                // FK -> Room
+                b.HasOne<Room_chatEntity>()
+                    .WithMany()
+                    .HasForeignKey(m => m.room_id)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<FriendshipEntity>(b =>
+            {
+                b.ToTable("Friendships");
+                b.HasKey(f => f.friendship_id);
+
+                b.Property(f => f.status).HasMaxLength(50).IsRequired(false);
+                b.Property(f => f.created_at).HasColumnType("datetime2");
+                b.Property(f => f.modified_at).HasColumnType("datetime2");
+
+                b.HasOne(f => f.user)
+                    .WithMany()
+                    .HasForeignKey(f => f.user_id)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                b.HasOne(f => f.friend)
+                    .WithMany()
+                    .HasForeignKey(f => f.friend_id)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+        }
+    }
+}

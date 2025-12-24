@@ -1,0 +1,13 @@
+[
+  {
+    "ContainingType": "PostAPI.Controllers.PostController",
+    "Method": "publishSmsNotificationEvent",
+    "RelativePath": "api/Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "publish-sms-notification"
+  }
+]
