@@ -1,0 +1,26 @@
+## .NET build output
+bin/
+obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider
+.idea/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+
+## ASP.NET Core
+appsettings.Development.json
+
+## Secrets
+secrets.json
