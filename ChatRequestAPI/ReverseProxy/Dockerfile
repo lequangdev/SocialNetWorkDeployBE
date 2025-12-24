@@ -3,25 +3,25 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy project files first to leverage Docker layer caching
-COPY ReverseProxy/ReverseProxy.csproj ReverseProxy/
-COPY Infrastructure/Infrastructure.csproj Infrastructure/
-COPY DTO/DTO.csproj DTO/
-COPY Domain/Domain.csproj Domain/
-COPY ServiceLayer/ServiceLayer.csproj ServiceLayer/
-COPY DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
-COPY HostBase/HostBase.csproj HostBase/
+COPY backend/ChatRequestAPI/ReverseProxy/ReverseProxy.csproj ReverseProxy/
+COPY backend/ChatRequestAPI/Infrastructure/Infrastructure.csproj Infrastructure/
+COPY backend/ChatRequestAPI/DTO/DTO.csproj DTO/
+COPY backend/ChatRequestAPI/Domain/Domain.csproj Domain/
+COPY backend/ChatRequestAPI/ServiceLayer/ServiceLayer.csproj ServiceLayer/
+COPY backend/ChatRequestAPI/DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
+COPY backend/ChatRequestAPI/HostBase/HostBase.csproj HostBase/
 
 # Restore dependencies (includes referenced projects)
 RUN dotnet restore ReverseProxy/ReverseProxy.csproj
 
 # Copy the remaining source files
-COPY ReverseProxy/ ReverseProxy/
-COPY Infrastructure/ Infrastructure/
-COPY DTO/ DTO/
-COPY Domain/ Domain/
-COPY ServiceLayer/ ServiceLayer/
-COPY DataAccessLayer/ DataAccessLayer/
-COPY HostBase/ HostBase/
+COPY backend/ChatRequestAPI/ReverseProxy/ ReverseProxy/
+COPY backend/ChatRequestAPI/Infrastructure/ Infrastructure/
+COPY backend/ChatRequestAPI/DTO/ DTO/
+COPY backend/ChatRequestAPI/Domain/ Domain/
+COPY backend/ChatRequestAPI/ServiceLayer/ ServiceLayer/
+COPY backend/ChatRequestAPI/DataAccessLayer/ DataAccessLayer/
+COPY backend/ChatRequestAPI/HostBase/ HostBase/
 
 WORKDIR /src/ReverseProxy
 RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
@@ -33,5 +33,6 @@ ENV ASPNETCORE_URLS=http://0.0.0.0:${PORT}
 COPY --from=build /app/publish ./
 
 # optional: expose port (informational)
+
 
 ENTRYPOINT ["dotnet", "ReverseProxy.dll"]
