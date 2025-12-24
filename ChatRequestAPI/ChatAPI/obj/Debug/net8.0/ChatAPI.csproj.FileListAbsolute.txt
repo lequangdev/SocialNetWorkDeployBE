@@ -202,3 +202,4 @@ D:\SocialNetwork\backend\ChatRequestAPI\ChatAPI\obj\Debug\net8.0\refint\ChatAPI.
 D:\SocialNetwork\backend\ChatRequestAPI\ChatAPI\obj\Debug\net8.0\ChatAPI.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\ChatAPI\obj\Debug\net8.0\ChatAPI.genruntimeconfig.cache
 D:\SocialNetwork\backend\ChatRequestAPI\ChatAPI\obj\Debug\net8.0\ref\ChatAPI.dll
+D:\SocialNetwork\backend\ChatRequestAPI\ChatAPI\obj\Debug\net8.0\ChatAPI.sourcelink.json

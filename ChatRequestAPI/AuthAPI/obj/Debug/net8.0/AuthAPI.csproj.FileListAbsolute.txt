@@ -203,3 +203,4 @@ D:\SocialNetwork\backend\ChatRequestAPI\AuthAPI\obj\Debug\net8.0\refint\AuthAPI.
 D:\SocialNetwork\backend\ChatRequestAPI\AuthAPI\obj\Debug\net8.0\AuthAPI.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\AuthAPI\obj\Debug\net8.0\AuthAPI.genruntimeconfig.cache
 D:\SocialNetwork\backend\ChatRequestAPI\AuthAPI\obj\Debug\net8.0\ref\AuthAPI.dll
+D:\SocialNetwork\backend\ChatRequestAPI\AuthAPI\obj\Debug\net8.0\AuthAPI.sourcelink.json

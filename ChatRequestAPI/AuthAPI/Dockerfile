@@ -30,8 +30,8 @@ RUN dotnet publish -c Release -o /app/publish
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0  AS runtime
 WORKDIR /app
-ENV ASPNETCORE_URLS=http://+:80
+ENV ASPNETCORE_URLS=http://0.0.0.0:${PORT}
 COPY --from=build /app/publish ./
 # optional: expose port (informational)
-EXPOSE 80
+
 ENTRYPOINT ["dotnet", "AuthAPI.dll"]

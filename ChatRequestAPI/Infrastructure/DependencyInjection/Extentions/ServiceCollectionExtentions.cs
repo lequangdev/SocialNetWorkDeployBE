@@ -151,15 +151,36 @@ namespace Infrastructure.DependencyInjection.Extentions
             return services;
         }
         // Redis cache
-        public static IServiceCollection AddConfigureCache(this IServiceCollection services, IConfiguration configuration) 
+        public static IServiceCollection AddConfigureCache(
+         this IServiceCollection services,
+         IConfiguration configuration)
         {
             var redisConfiguration = new RedisConfiguration();
             configuration.GetSection("RedisConfiguration").Bind(redisConfiguration);
-            services.AddSingleton(redisConfiguration);
-            services.AddSingleton<IConnectionMultiplexer>(_ => ConnectionMultiplexer.Connect(redisConfiguration.ConnectionString));
-            services.AddStackExchangeRedisCache(option => option.Configuration = redisConfiguration.ConnectionString);
-            return services; 
-        }
 
+            // 🔑 OVERRIDE bằng REDIS_URL nếu có
+            var redisFromEnv = Environment.GetEnvironmentVariable("REDIS_URL");
+            if (!string.IsNullOrEmpty(redisFromEnv))
+            {
+                redisConfiguration.ConnectionString = redisFromEnv;
+            }
+
+            services.AddSingleton(redisConfiguration);
+
+            // ✅ Cấu hình an toàn cho cloud
+            services.AddSingleton<IConnectionMultiplexer>(_ =>
+            {
+                var options = ConfigurationOptions.Parse(redisConfiguration.ConnectionString);
+                options.AbortOnConnectFail = false; // QUAN TRỌNG
+                return ConnectionMultiplexer.Connect(options);
+            });
+
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = redisConfiguration.ConnectionString;
+            });
+
+            return services;
+        }
     }
 }

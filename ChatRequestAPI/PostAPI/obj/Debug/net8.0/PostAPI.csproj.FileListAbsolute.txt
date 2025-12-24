@@ -198,3 +198,4 @@ D:\SocialNetwork\backend\ChatRequestAPI\PostAPI\obj\Debug\net8.0\refint\PostAPI.
 D:\SocialNetwork\backend\ChatRequestAPI\PostAPI\obj\Debug\net8.0\PostAPI.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\PostAPI\obj\Debug\net8.0\PostAPI.genruntimeconfig.cache
 D:\SocialNetwork\backend\ChatRequestAPI\PostAPI\obj\Debug\net8.0\ref\PostAPI.dll
+D:\SocialNetwork\backend\ChatRequestAPI\PostAPI\obj\Debug\net8.0\PostAPI.sourcelink.json

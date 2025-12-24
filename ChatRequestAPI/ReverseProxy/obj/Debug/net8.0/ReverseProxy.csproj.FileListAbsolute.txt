@@ -198,3 +198,4 @@ D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\refint\Rev
 D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ReverseProxy.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ReverseProxy.genruntimeconfig.cache
 D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ref\ReverseProxy.dll
+D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ReverseProxy.sourcelink.json
