@@ -22,7 +22,7 @@ namespace DataAccessLayer
 
         public async Task<bool> SendMessageAsync(MessageEntity message)
         {
-            _dbContext.Message.Add(message);
+            _dbContext.message.Add(message);
             await _dbContext.SaveChangesAsync();
             return true;
         }
@@ -40,7 +40,7 @@ namespace DataAccessLayer
 
         public async Task<List<MessageEntity>> getMessageByRoomId(Guid room_id)
         {
-            return await _dbContext.Message
+            return await _dbContext.message
             .Where(m => m.room_id == room_id)
             .OrderBy(m => m.created_date) 
             .ToListAsync();
