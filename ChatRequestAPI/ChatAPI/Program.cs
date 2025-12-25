@@ -110,5 +110,4 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.MapHub<MessageHub>("/hubs/chat");
-app.MapGet("/health", () => Results.Ok("OK"));
 app.Run();
