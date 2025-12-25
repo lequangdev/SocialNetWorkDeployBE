@@ -109,6 +109,6 @@ app.UseAuthentication();
 //app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-app.MapHub<MessageHub>("/hubs/chat"); 
-
+app.MapHub<MessageHub>("/hubs/chat");
+app.MapGet("/health", () => Results.Ok("OK"));
 app.Run();

@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\authapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\room_userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\room_userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\chatapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E70B07B0-E824-42A7-8734-1A7B31262A17}|ServiceLayer\\ServiceLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\servicelayer\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E70B07B0-E824-42A7-8734-1A7B31262A17}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\messagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\messagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\ef core\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ef core\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\ef core\\collectionefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ef core\\collectionefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\ef core\\entityframeworkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ef core\\entityframeworkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\baserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\baserepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\friendshiprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\friendshiprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\room_chatrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\room_chatrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\chatapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\authapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\reverseproxy\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -15,6 +63,18 @@
       "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\reverseproxy\\reverseproxy.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\reverseproxy.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\reverseproxy\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\authapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\reverseproxy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -23,19 +83,11 @@
       "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\authapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94F6E59C-51CD-4F32-A580-47AAE356DAE8}|PostAPI\\PostAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\postapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{94F6E59C-51CD-4F32-A580-47AAE356DAE8}|PostAPI\\PostAPI.csproj|solutionrelative:postapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31405BA1-1E50-47ED-9306-5DABF2456650}|Infrastructure\\Infrastructure.csproj|c:\\users\\admin\\.nuget\\packages\\signalrchat\\1.0.0\\contentfiles\\any\\net8.0\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\chatapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\chatapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -48,10 +100,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{31405BA1-1E50-47ED-9306-5DABF2456650}|Infrastructure\\Infrastructure.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\infrastructure\\dependencyinjection\\extentions\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31405BA1-1E50-47ED-9306-5DABF2456650}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection\\extentions\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\reverseproxy\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\chatapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -68,10 +116,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\reverseproxy\\reverseproxy.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{20F36E65-BABF-40D0-B4AC-35A7D5320577}|ReverseProxy\\ReverseProxy.csproj|solutionrelative:reverseproxy\\reverseproxy.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77FA2F92-8435-47DD-9591-F2175D3824D5}|AuthAPI\\AuthAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -166,10 +210,6 @@
       "RelativeMoniker": "D:0:0:{4CBC4297-BC31-49FA-AFD3-184FB07814B2}|Domain\\Domain.csproj|solutionrelative:domain\\room_chatentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\messagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\messagerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4CBC4297-BC31-49FA-AFD3-184FB07814B2}|Domain\\Domain.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\domain\\messageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CBC4297-BC31-49FA-AFD3-184FB07814B2}|Domain\\Domain.csproj|solutionrelative:domain\\messageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -178,28 +218,8 @@
       "RelativeMoniker": "D:0:0:{4CBC4297-BC31-49FA-AFD3-184FB07814B2}|Domain\\Domain.csproj|solutionrelative:domain\\friendshipentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\ef core\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ef core\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\ef core\\collectionefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ef core\\collectionefcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\dataaccesslayer\\ef core\\entityframeworkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9EDCC14-182D-4820-84C7-E744A43EC2BB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ef core\\entityframeworkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94F6E59C-51CD-4F32-A580-47AAE356DAE8}|PostAPI\\PostAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\postapi\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94F6E59C-51CD-4F32-A580-47AAE356DAE8}|PostAPI\\PostAPI.csproj|solutionrelative:postapi\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\chatapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB89103-C043-4A2F-A355-4514593914CD}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31405BA1-1E50-47ED-9306-5DABF2456650}|Infrastructure\\Infrastructure.csproj|d:\\socialnetwork\\backend\\chatrequestapi\\infrastructure\\mediatr\\idispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -241,11 +261,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ServiceLayer\\MessageService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\MessageService.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ServiceLayer\\MessageService.cs",
+              "RelativeToolTip": "ServiceLayer\\MessageService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAowE8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T03:18:30.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseRepo.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\BaseRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\BaseRepo.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\BaseRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\BaseRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T02:51:55.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "FriendshipRepo.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\FriendshipRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\FriendshipRepo.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\FriendshipRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\FriendshipRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T02:51:53.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Room_userRepo.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\Room_userRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Room_userRepo.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\Room_userRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Room_userRepo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAhwCgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T02:51:44.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Room_chatRepo.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\Room_chatRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Room_chatRepo.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\Room_chatRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Room_chatRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T02:51:40.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\AppDbContext.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\EF core\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T02:13:04.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EntityFrameWorkConfiguration.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T02:33:56.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessageRepo.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\MessageRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\MessageRepo.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\MessageRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\MessageRepo.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:41:53.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "ChatAPI\\Controllers\\ChatController.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "ChatAPI\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwG4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:26:38.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CollectionEFCore.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\CollectionEFCore.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\CollectionEFCore.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\CollectionEFCore.cs",
+              "RelativeToolTip": "DataAccessLayer\\EF core\\CollectionEFCore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T02:33:56.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\appsettings.Production.json",
               "RelativeDocumentMoniker": "ChatAPI\\appsettings.Production.json",
@@ -253,36 +403,51 @@
               "RelativeToolTip": "ChatAPI\\appsettings.Production.json",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T02:50:57.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "PostAPI\\appsettings.Production.json",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\appsettings.Production.json",
-              "RelativeToolTip": "PostAPI\\appsettings.Production.json",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwCwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T02:51:10.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Dockerfile",
-              "RelativeDocumentMoniker": "AuthAPI\\Dockerfile",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Dockerfile",
-              "RelativeToolTip": "AuthAPI\\Dockerfile",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-24T04:19:11.27Z",
+              "WhenOpened": "2025-12-22T02:50:57.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "AuthAPI\\appsettings.Production.json",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\appsettings.Production.json",
+              "RelativeToolTip": "AuthAPI\\appsettings.Production.json",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-22T02:49:59.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\UserRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UserRepo.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\UserRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\UserRepo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:40:27.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "ReverseProxy\\appsettings.Production.json",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\appsettings.Production.json",
+              "RelativeToolTip": "ReverseProxy\\appsettings.Production.json",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAADQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-22T02:39:30.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ReverseProxy\\appsettings.Development.json",
@@ -295,45 +460,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "ReverseProxy\\appsettings.Production.json",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\appsettings.Production.json",
-              "RelativeToolTip": "ReverseProxy\\appsettings.Production.json",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T02:39:30.226Z",
+              "DocumentIndex": 15,
+              "Title": "ReverseProxy.http",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\ReverseProxy.http",
+              "RelativeDocumentMoniker": "ReverseProxy\\ReverseProxy.http",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\ReverseProxy.http",
+              "RelativeToolTip": "ReverseProxy\\ReverseProxy.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-11-20T03:11:51.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "AuthAPI\\appsettings.Production.json",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\appsettings.Production.json",
-              "RelativeToolTip": "AuthAPI\\appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T02:49:59.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Program.cs",
-              "RelativeDocumentMoniker": "ReverseProxy\\Program.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Program.cs",
-              "RelativeToolTip": "ReverseProxy\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T01:57:08.726Z",
+              "DocumentIndex": 16,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Dockerfile",
+              "RelativeDocumentMoniker": "ReverseProxy\\Dockerfile",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Dockerfile",
+              "RelativeToolTip": "ReverseProxy\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-22T02:39:47.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "AuthAPI\\Dockerfile",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Dockerfile",
+              "RelativeToolTip": "AuthAPI\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T04:19:11.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\appsettings.json",
               "RelativeDocumentMoniker": "ReverseProxy\\appsettings.json",
@@ -346,7 +512,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Program.cs",
+              "RelativeDocumentMoniker": "ReverseProxy\\Program.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Program.cs",
+              "RelativeToolTip": "ReverseProxy\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T01:57:08.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "PostAPI\\appsettings.Production.json",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\appsettings.Production.json",
+              "RelativeToolTip": "PostAPI\\appsettings.Production.json",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-22T02:51:10.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ChatAPI\\appsettings.Development.json",
@@ -358,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PostAPI\\appsettings.Development.json",
@@ -370,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "ServiceCollectionExtentions.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\DependencyInjection\\Extentions\\ServiceCollectionExtentions.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection\\Extentions\\ServiceCollectionExtentions.cs",
@@ -382,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Admin\\.nuget\\packages\\signalrchat\\1.0.0\\contentFiles\\any\\net8.0\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\Admin\\.nuget\\packages\\signalrchat\\1.0.0\\contentFiles\\any\\net8.0\\appsettings.Development.json [Read Only]",
@@ -393,19 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Dockerfile",
-              "RelativeDocumentMoniker": "ReverseProxy\\Dockerfile",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\Dockerfile",
-              "RelativeToolTip": "ReverseProxy\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-22T02:39:47.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Dockerfile",
               "RelativeDocumentMoniker": "ChatAPI\\Dockerfile",
@@ -417,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\Dockerfile",
               "RelativeDocumentMoniker": "PostAPI\\Dockerfile",
@@ -429,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Program.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
@@ -441,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AuthAPI\\appsettings.Development.json",
@@ -453,19 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ReverseProxy.http",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\ReverseProxy.http",
-              "RelativeDocumentMoniker": "ReverseProxy\\ReverseProxy.http",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\ReverseProxy.http",
-              "RelativeToolTip": "ReverseProxy\\ReverseProxy.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-11-20T03:11:51.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 35,
               "Title": "PostAPI.csproj",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\PostAPI.csproj",
               "RelativeDocumentMoniker": "PostAPI\\PostAPI.csproj",
@@ -477,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 41,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\appsettings.json",
               "RelativeDocumentMoniker": "PostAPI\\appsettings.json",
@@ -489,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\appsettings.json",
               "RelativeDocumentMoniker": "ChatAPI\\appsettings.json",
@@ -501,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 36,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AuthAPI\\Properties\\launchSettings.json",
@@ -513,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 37,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ChatAPI\\Properties\\launchSettings.json",
@@ -525,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 42,
               "Title": "ChatAPI.csproj",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\ChatAPI.csproj",
               "RelativeDocumentMoniker": "ChatAPI\\ChatAPI.csproj",
@@ -537,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 43,
               "Title": "json.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\json.json",
               "RelativeDocumentMoniker": "AuthAPI\\json.json",
@@ -549,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 44,
               "Title": "ReverseProxy",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ReverseProxy\\ReverseProxy.csproj",
               "RelativeDocumentMoniker": "ReverseProxy\\ReverseProxy.csproj",
@@ -560,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\appsettings.json",
               "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
@@ -572,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\Program.cs",
               "RelativeDocumentMoniker": "PostAPI\\Program.cs",
@@ -584,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 39,
               "Title": "PostAPI.http",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\PostAPI.http",
               "RelativeDocumentMoniker": "PostAPI\\PostAPI.http",
@@ -596,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 38,
               "Title": "AuthAPI.csproj",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\AuthAPI.csproj",
               "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.csproj",
@@ -608,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 47,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ServiceLayer\\UserService.cs",
               "RelativeDocumentMoniker": "ServiceLayer\\UserService.cs",
@@ -620,31 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "MessageRepo.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\MessageRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\MessageRepo.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\MessageRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\MessageRepo.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAcwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T03:41:53.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\UserRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\UserRepo.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\UserRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\UserRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T03:40:27.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "AuditableEntity.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Domain\\AuditableEntity.cs",
               "RelativeDocumentMoniker": "Domain\\AuditableEntity.cs",
@@ -656,43 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "CollectionEFCore.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\CollectionEFCore.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\CollectionEFCore.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\CollectionEFCore.cs",
-              "RelativeToolTip": "DataAccessLayer\\EF core\\CollectionEFCore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:33:56.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "EntityFrameWorkConfiguration.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
-              "RelativeToolTip": "DataAccessLayer\\EF core\\EntityFrameWorkConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:33:56.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\AppDbContext.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\EF core\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:13:04.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 50,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Domain\\UserEntity.cs",
               "RelativeDocumentMoniker": "Domain\\UserEntity.cs",
@@ -704,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "Room_userEntity.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Domain\\Room_userEntity.cs",
               "RelativeDocumentMoniker": "Domain\\Room_userEntity.cs",
@@ -716,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 51,
               "Title": "Room_chatEntity.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Domain\\Room_chatEntity.cs",
               "RelativeDocumentMoniker": "Domain\\Room_chatEntity.cs",
@@ -728,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 52,
               "Title": "MessageEntity.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Domain\\MessageEntity.cs",
               "RelativeDocumentMoniker": "Domain\\MessageEntity.cs",
@@ -740,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 53,
               "Title": "FriendshipEntity.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Domain\\FriendshipEntity.cs",
               "RelativeDocumentMoniker": "Domain\\FriendshipEntity.cs",
@@ -752,7 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 45,
               "Title": "AuthAPI.http",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\AuthAPI.http",
               "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.http",
@@ -764,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "BaseApi.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\HostBase\\Controllers\\BaseApi.cs",
               "RelativeDocumentMoniker": "HostBase\\Controllers\\BaseApi.cs",
@@ -776,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "PostController.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\PostAPI\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "PostAPI\\Controllers\\PostController.cs",
@@ -788,19 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "ChatAPI\\Controllers\\ChatController.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "ChatAPI\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:26:38.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 46,
               "Title": "FriendshipController.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Controllers\\FriendshipController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\FriendshipController.cs",
@@ -812,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 40,
               "Title": "MessageHub.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\MessageHub.cs",
               "RelativeDocumentMoniker": "ChatAPI\\MessageHub.cs",
@@ -824,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ChatAPI\\Program.cs",
               "RelativeDocumentMoniker": "ChatAPI\\Program.cs",
@@ -836,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "BaseService.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ServiceLayer\\BaseService.cs",
               "RelativeDocumentMoniker": "ServiceLayer\\BaseService.cs",
@@ -848,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "AuthUserController.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\AuthAPI\\Controllers\\AuthUserController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\AuthUserController.cs",
@@ -860,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "Consumer.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\RabitMq\\MessageBus\\Consumers\\Consumer.cs",
               "RelativeDocumentMoniker": "Infrastructure\\RabitMq\\MessageBus\\Consumers\\Consumer.cs",
@@ -868,11 +963,12 @@
               "RelativeToolTip": "Infrastructure\\RabitMq\\MessageBus\\Consumers\\Consumer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T03:35:54.912Z"
+              "WhenOpened": "2025-11-17T03:35:54.912Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "IDispatcher.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\MediatR\\IDispatcher.cs",
               "RelativeDocumentMoniker": "Infrastructure\\MediatR\\IDispatcher.cs",
@@ -884,7 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": "Producer.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\RabitMq\\MessageBus\\Producers\\Producer.cs",
               "RelativeDocumentMoniker": "Infrastructure\\RabitMq\\MessageBus\\Producers\\Producer.cs",
@@ -896,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "INotificationEvent.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\RabitMq\\MessageBus\\Events\\INotificationEvent.cs",
               "RelativeDocumentMoniker": "Infrastructure\\RabitMq\\MessageBus\\Events\\INotificationEvent.cs",
@@ -908,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "IMessage.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\RabitMq\\MessageBus\\Events\\IMessage.cs",
               "RelativeDocumentMoniker": "Infrastructure\\RabitMq\\MessageBus\\Events\\IMessage.cs",
@@ -920,7 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "DomainEvent.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\RabitMq\\MessageBus\\Events\\DomainEvent.cs",
               "RelativeDocumentMoniker": "Infrastructure\\RabitMq\\MessageBus\\Events\\DomainEvent.cs",
@@ -932,7 +1028,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "MediatRService.cs",
               "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Infrastructure\\MediatR\\MediatRService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\MediatR\\MediatRService.cs",
