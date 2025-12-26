@@ -45,6 +45,6 @@ var app = builder.Build();
 app.UseCors("AllowSpecificOrigin");
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapGet("/health", () => Results.Ok("OK"));
+app.MapMethods("/health", new[] { "GET", "HEAD" }, () => Results.Ok());
 app.MapReverseProxy();
 app.Run();

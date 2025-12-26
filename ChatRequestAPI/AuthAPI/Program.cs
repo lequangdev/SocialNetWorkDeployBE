@@ -88,6 +88,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapGet("/health", () => Results.Ok("OK"));
+app.MapMethods("/health", new[] { "GET", "HEAD" }, () => Results.Ok());
 app.Run();
 
