@@ -40,3 +40,4 @@ D:\SocialNetwork\backend\ChatRequestAPI\HostBase\obj\Debug\net8.0\HostBase.dll
 D:\SocialNetwork\backend\ChatRequestAPI\HostBase\obj\Debug\net8.0\refint\HostBase.dll
 D:\SocialNetwork\backend\ChatRequestAPI\HostBase\obj\Debug\net8.0\HostBase.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\HostBase\obj\Debug\net8.0\ref\HostBase.dll
+D:\SocialNetwork\backend\ChatRequestAPI\HostBase\obj\Debug\net8.0\HostBase.sourcelink.json

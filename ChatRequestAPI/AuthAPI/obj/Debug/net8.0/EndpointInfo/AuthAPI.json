@@ -5,6 +5,28 @@
     "version": "1.0"
   },
   "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "AuthAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "AuthAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/AuthUser/InsertUser": {
       "post": {
         "tags": [

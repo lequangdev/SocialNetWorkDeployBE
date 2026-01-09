@@ -288,6 +288,28 @@
           }
         }
       }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "ChatAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "ChatAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

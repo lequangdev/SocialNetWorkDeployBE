@@ -36,3 +36,4 @@ D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ServiceLay
 D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\refint\ServiceLayer.dll
 D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ServiceLayer.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ref\ServiceLayer.dll
+D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ServiceLayer.sourcelink.json
