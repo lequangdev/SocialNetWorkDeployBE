@@ -285,8 +285,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\AppDbContext.cs",
+              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\EF core\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T03:12:56.593Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -297,8 +310,7 @@
               "RelativeToolTip": "Domain\\Comments_mediaEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T03:00:11.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T03:00:11.783Z"
             },
             {
               "$type": "Document",
@@ -310,8 +322,7 @@
               "RelativeToolTip": "Domain\\Post_commentsEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T02:57:00.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T02:57:00.064Z"
             },
             {
               "$type": "Document",
@@ -323,8 +334,7 @@
               "RelativeToolTip": "Domain\\Post_likesEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T02:52:44.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T02:52:44.547Z"
             },
             {
               "$type": "Document",
@@ -336,8 +346,7 @@
               "RelativeToolTip": "Domain\\Post_mediaEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T02:46:33.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T02:46:33.166Z"
             },
             {
               "$type": "Document",
@@ -349,8 +358,7 @@
               "RelativeToolTip": "Domain\\Enum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T02:41:26.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T02:41:26.166Z"
             },
             {
               "$type": "Document",
@@ -362,8 +370,7 @@
               "RelativeToolTip": "Domain\\PostsEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T02:39:57.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T02:39:57.185Z"
             },
             {
               "$type": "Document",
@@ -375,21 +382,7 @@
               "RelativeToolTip": "Domain\\Room_userEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:07:29.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EF core\\AppDbContext.cs",
-              "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DataAccessLayer\\EF core\\AppDbContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\EF core\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:13:04.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:07:29.447Z"
             },
             {
               "$type": "Document",
@@ -401,8 +394,7 @@
               "RelativeToolTip": "Domain\\MessageEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:07:26.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:07:26.215Z"
             },
             {
               "$type": "Document",
@@ -414,8 +406,7 @@
               "RelativeToolTip": "Domain\\FriendshipEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:07:25.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:07:25.531Z"
             },
             {
               "$type": "Document",
@@ -427,8 +418,7 @@
               "RelativeToolTip": "Domain\\Room_chatEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:07:26.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:07:26.866Z"
             },
             {
               "$type": "Document",
@@ -440,8 +430,7 @@
               "RelativeToolTip": "Domain\\UserEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:07:42.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:07:42.004Z"
             },
             {
               "$type": "Document",
@@ -453,8 +442,7 @@
               "RelativeToolTip": "ChatAPI\\MessageHub.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAIwDoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:19:49.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T13:19:49.659Z"
             },
             {
               "$type": "Document",
@@ -526,8 +514,7 @@
               "RelativeToolTip": "Domain\\AuditableEntity.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T03:40:15.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T03:40:15.41Z"
             },
             {
               "$type": "Document",
