@@ -29,7 +29,6 @@ namespace ServiceLayer
 
         public override async Task<bool> Insert(List<FriendshipEntity> model)
         {
-            var transaction = await _dbContext.Database.BeginTransactionAsync();
             try
             {
                 foreach (var entity in model)
@@ -48,11 +47,9 @@ namespace ServiceLayer
                     entity.status = "1";
                 }
                 await _friendshipRepo.Insert(model);
-                await transaction.CommitAsync();
                 return true;
             }
             catch (Exception ex) {
-                await transaction.RollbackAsync();
                 return false;
             }
         }

@@ -1,7 +1,11 @@
-﻿using Infrastructure.RabitMq.MessageBus.Events;
+﻿using Domain;
+using DTO;
+using Infrastructure.RabitMq.MessageBus.Events;
 using Infrastructure.RabitMq.MessageBus.Events.Constants;
 using Infrastructure.RabitMq.MessageBus.Producers;
 using Microsoft.AspNetCore.Mvc;
+using ServiceLayer;
+using ServiceLayer.Interfaces;
 
 namespace PostAPI.Controllers
 {
@@ -10,15 +14,36 @@ namespace PostAPI.Controllers
     public class PostController : ControllerBase
     {
         private readonly IProducer _producer;
+        private readonly IPostService _postService;
 
-        public PostController(IProducer producer)
+        public PostController(IProducer producer, IPostService postService)
         {
+            _postService = postService;
             _producer = producer;
         }
-        [HttpPost(Name = "publish-sms-notification")]
-        public async Task<ActionResult> publishSmsNotificationEvent()
+        [HttpPost("InsertPost")]
+        public async Task<bool> InsertPost(PostDTO payload)
         {
-            return Accepted();
+            try
+            {
+                return await _postService.InsertPost(payload);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        [HttpGet("GetAll")]
+        public async Task<List<PostsEntity>> GetAll()
+        {
+            try
+            {
+                return await _postService.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
     }

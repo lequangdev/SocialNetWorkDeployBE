@@ -841,6 +841,9 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "Enums": "1.0.0"
+        },
         "runtime": {
           "Domain.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -849,8 +852,19 @@
         }
       },
       "DTO/1.0.0": {
+        "dependencies": {
+          "Enums": "1.0.0"
+        },
         "runtime": {
           "DTO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Enums/1.0.0": {
+        "runtime": {
+          "Enums.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -900,7 +914,8 @@
         "dependencies": {
           "DTO": "1.0.0",
           "DataAccessLayer": "1.0.0",
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Enums": "1.0.0"
         },
         "runtime": {
           "ServiceLayer.dll": {
@@ -1516,6 +1531,11 @@
       "sha512": ""
     },
     "DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Enums/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

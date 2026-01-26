@@ -41,3 +41,5 @@ D:\SocialNetwork\backend\ChatRequestAPI\Infrastructure\obj\Debug\net8.0\refint\I
 D:\SocialNetwork\backend\ChatRequestAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
 D:\SocialNetwork\backend\ChatRequestAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+D:\SocialNetwork\backend\ChatRequestAPI\Infrastructure\bin\Debug\net8.0\Enums.dll
+D:\SocialNetwork\backend\ChatRequestAPI\Infrastructure\bin\Debug\net8.0\Enums.pdb

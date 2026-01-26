@@ -168,7 +168,7 @@ namespace Infrastructure.DependencyInjection.Extentions
 
             services.AddSingleton<IConnectionMultiplexer>(_ =>
             {
-                var options = ConfigurationOptions.Parse(redisConfiguration.ConnectionString);
+                var options = ConfigurationOptions.Parse(redisConfiguration.ConnectionString!);
                 options.AbortOnConnectFail = false;
                 return ConnectionMultiplexer.Connect(options);
             });

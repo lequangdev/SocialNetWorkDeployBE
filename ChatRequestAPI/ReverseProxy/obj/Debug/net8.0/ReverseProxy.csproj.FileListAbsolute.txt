@@ -199,3 +199,5 @@ D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ReversePro
 D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ReverseProxy.genruntimeconfig.cache
 D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ref\ReverseProxy.dll
 D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\obj\Debug\net8.0\ReverseProxy.sourcelink.json
+D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\bin\Debug\net8.0\Enums.dll
+D:\SocialNetwork\backend\ChatRequestAPI\ReverseProxy\bin\Debug\net8.0\Enums.pdb

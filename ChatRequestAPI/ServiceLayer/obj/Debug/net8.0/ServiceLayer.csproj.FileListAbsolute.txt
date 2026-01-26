@@ -37,3 +37,5 @@ D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\refint\Ser
 D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ServiceLayer.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ref\ServiceLayer.dll
 D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\obj\Debug\net8.0\ServiceLayer.sourcelink.json
+D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\bin\Debug\net8.0\Enums.dll
+D:\SocialNetwork\backend\ChatRequestAPI\ServiceLayer\bin\Debug\net8.0\Enums.pdb

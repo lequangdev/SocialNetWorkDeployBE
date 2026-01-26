@@ -15,10 +15,10 @@ namespace DataAccessLayer.EF_core
         // Entity Frame Work core
         public static IServiceCollection AddEntityFrameWorkCore(this IServiceCollection services, IConfiguration configuration)
         {
-            var jwtConfiguration = configuration.GetSection(nameof(EntityFrameWorkConfiguration)).Get<EntityFrameWorkConfiguration>();
+            var EFConfiguration = configuration.GetSection(nameof(EntityFrameWorkConfiguration)).Get<EntityFrameWorkConfiguration>();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(
-                    jwtConfiguration!.DefaultConnection,
+                    EFConfiguration!.DefaultConnection,
                     new MySqlServerVersion(new Version(8, 0, 29))
                 )
             );

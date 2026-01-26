@@ -6,6 +6,10 @@ using Infrastructure.Serilog;
 using Infrastructure.Redis;
 using DataAccessLayer.EF_core;
 using Infrastructure.RabitMq.MessageBus.Producers;
+using ServiceLayer.Interfaces;
+using ServiceLayer;
+using DataAccessLayer.Interfaces;
+using DataAccessLayer;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,6 +25,14 @@ builder.Services.AddConfigureMasstransitRabtiMQ(builder.Configuration);
 builder.Services.AddScoped<IProducer, Producer>();
 // Consumer injection
 builder.Services.AddScoped<ISmsService, SmsService>();
+
+// DI layer 
+builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<IPostRepo, PostRepo>();
+builder.Services.AddScoped<IPost_mediaRepo, Post_mediaRepo>();
+
+
+
 
 // Config serilog
 builder.Services.AddConfigureSerilog(builder.Configuration);

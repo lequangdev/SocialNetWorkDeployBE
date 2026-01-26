@@ -327,6 +327,9 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Enums": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
@@ -337,11 +340,24 @@
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Enums": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DTO.dll": {}
         },
         "runtime": {
           "bin/placeholder/DTO.dll": {}
+        }
+      },
+      "Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enums.dll": {}
         }
       }
     }
@@ -861,13 +877,19 @@
       "type": "project",
       "path": "../DTO/DTO.csproj",
       "msbuildProject": "../DTO/DTO.csproj"
+    },
+    "Enums/1.0.0": {
+      "type": "project",
+      "path": "../Enums/Enums.csproj",
+      "msbuildProject": "../Enums/Enums.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "DTO >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
-      "Domain >= 1.0.0"
+      "Domain >= 1.0.0",
+      "Enums >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -910,6 +932,9 @@
             },
             "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DTO\\DTO.csproj": {
               "projectPath": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\DTO\\DTO.csproj"
+            },
+            "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Enums\\Enums.csproj": {
+              "projectPath": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\Enums\\Enums.csproj"
             }
           }
         }

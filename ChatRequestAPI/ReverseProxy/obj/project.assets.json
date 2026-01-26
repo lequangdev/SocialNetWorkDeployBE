@@ -1485,6 +1485,9 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Enums": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
@@ -1495,11 +1498,24 @@
       "DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Enums": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DTO.dll": {}
         },
         "runtime": {
           "bin/placeholder/DTO.dll": {}
+        }
+      },
+      "Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enums.dll": {}
         }
       },
       "Infrastructure/1.0.0": {
@@ -1538,7 +1554,8 @@
         "dependencies": {
           "DTO": "1.0.0",
           "DataAccessLayer": "1.0.0",
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Enums": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ServiceLayer.dll": {}
@@ -3758,6 +3775,11 @@
       "type": "project",
       "path": "../DTO/DTO.csproj",
       "msbuildProject": "../DTO/DTO.csproj"
+    },
+    "Enums/1.0.0": {
+      "type": "project",
+      "path": "../Enums/Enums.csproj",
+      "msbuildProject": "../Enums/Enums.csproj"
     },
     "Infrastructure/1.0.0": {
       "type": "project",

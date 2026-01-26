@@ -33,3 +33,5 @@ D:\SocialNetwork\backend\ChatRequestAPI\DataAccessLayer\obj\Debug\net8.0\refint\
 D:\SocialNetwork\backend\ChatRequestAPI\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 D:\SocialNetwork\backend\ChatRequestAPI\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
 D:\SocialNetwork\backend\ChatRequestAPI\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+D:\SocialNetwork\backend\ChatRequestAPI\DataAccessLayer\bin\Debug\net8.0\Enums.dll
+D:\SocialNetwork\backend\ChatRequestAPI\DataAccessLayer\bin\Debug\net8.0\Enums.pdb

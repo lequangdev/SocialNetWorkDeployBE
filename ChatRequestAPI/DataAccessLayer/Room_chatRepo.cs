@@ -19,7 +19,7 @@ namespace DataAccessLayer
         }
         public async Task<bool> InsertRoom_chat(Room_chatEntity room_chat)
         {
-            await _dbContext.room_chat.AddRangeAsync(room_chat);
+            await _dbContext.room_chat.AddAsync(room_chat);
             int rowsAffected = await _dbContext.SaveChangesAsync();
             return rowsAffected > 0;
         }

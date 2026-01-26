@@ -1,14 +1,49 @@
 [
   {
     "ContainingType": "PostAPI.Controllers.PostController",
-    "Method": "publishSmsNotificationEvent",
-    "RelativePath": "api/Post",
-    "HttpMethod": "POST",
+    "Method": "GetAll",
+    "RelativePath": "api/Post/GetAll",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [],
-    "EndpointName": "publish-sms-notification"
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.PostsEntity, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PostAPI.Controllers.PostController",
+    "Method": "InsertPost",
+    "RelativePath": "api/Post/InsertPost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "DTO.PostDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",

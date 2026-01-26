@@ -5,15 +5,88 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Post": {
+    "/api/Post/InsertPost": {
       "post": {
         "tags": [
           "Post"
         ],
-        "operationId": "publish-sms-notification",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Post/GetAll": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PostsEntity"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PostsEntity"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PostsEntity"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -41,5 +114,181 @@
       }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "PostDTO": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "privacy": {
+            "$ref": "#/components/schemas/PostPrivacy"
+          },
+          "media_count": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "like_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comment_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mediaDTOs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Post_mediaDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostPrivacy": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Post_mediaDTO": {
+        "type": "object",
+        "properties": {
+          "media_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "media_type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostsEntity": {
+        "type": "object",
+        "properties": {
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modified_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "posts_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "privacy": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "media_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "like_count": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "comment_count": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserEntity"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserEntity": {
+        "type": "object",
+        "properties": {
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modified_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "user_fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_account": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_password": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_avatar": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

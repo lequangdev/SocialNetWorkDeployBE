@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Enums
 {
-    public class Enum
+    public class PostEnum
     {
-        public enum PostPrivacy : byte
+        public enum PostPrivacy : int
         {
             Private = 0,
             Friends = 1,
             Public = 2
         }
 
-        public enum EntityStatus : byte
+        public enum PostStatus : int
         {
             Inactive = 0,
             Active = 1
