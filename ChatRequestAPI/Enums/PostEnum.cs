@@ -8,14 +8,14 @@ namespace Enums
 {
     public class PostEnum
     {
-        public enum PostPrivacy : int
+        public enum PostPrivacy : byte
         {
             Private = 0,
             Friends = 1,
             Public = 2
         }
 
-        public enum PostStatus : int
+        public enum PostStatus : byte
         {
             Inactive = 0,
             Active = 1

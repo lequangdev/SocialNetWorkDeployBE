@@ -20,3 +20,4 @@ namespace Domain
         public PostsEntity posts { get; set; }
     }
 }
+

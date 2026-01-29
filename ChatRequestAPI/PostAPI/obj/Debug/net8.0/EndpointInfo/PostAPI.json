@@ -91,6 +91,44 @@
         }
       }
     },
+    "/api/Post/GetAllPostsDetail": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PostDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PostDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PostDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/health": {
       "get": {
         "tags": [
@@ -116,10 +154,54 @@
   },
   "components": {
     "schemas": {
+      "PostCommentsDTO": {
+        "type": "object",
+        "properties": {
+          "post_comments_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/PostStatus"
+          }
+        },
+        "additionalProperties": false
+      },
       "PostDTO": {
         "type": "object",
         "properties": {
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modified_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "user_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "posts_id": {
             "type": "string",
             "format": "uuid",
             "nullable": true
@@ -131,6 +213,9 @@
           "privacy": {
             "$ref": "#/components/schemas/PostPrivacy"
           },
+          "status": {
+            "$ref": "#/components/schemas/PostStatus"
+          },
           "media_count": {
             "type": "integer",
             "format": "int32",
@@ -138,16 +223,35 @@
           },
           "like_count": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "comment_count": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserPublicDTO"
           },
           "mediaDTOs": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Post_mediaDTO"
+            },
+            "nullable": true
+          },
+          "userLikes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Post_likesDTO"
+            },
+            "nullable": true
+          },
+          "userComments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PostCommentsDTO"
             },
             "nullable": true
           }
@@ -163,9 +267,135 @@
         "type": "integer",
         "format": "int32"
       },
+      "PostStatus": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Post_commentsEntity": {
+        "type": "object",
+        "properties": {
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modified_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "post_comments_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "posts_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/PostStatus"
+          },
+          "posts": {
+            "$ref": "#/components/schemas/PostsEntity"
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserEntity"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Post_likesDTO": {
+        "type": "object",
+        "properties": {
+          "post_likes_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "likes_type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Post_likesEntity": {
+        "type": "object",
+        "properties": {
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modified_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "post_likes_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "posts_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "likes_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "posts": {
+            "$ref": "#/components/schemas/PostsEntity"
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserEntity"
+          }
+        },
+        "additionalProperties": false
+      },
       "Post_mediaDTO": {
         "type": "object",
         "properties": {
+          "post_media_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
           "media_url": {
             "type": "string",
             "nullable": true
@@ -173,6 +403,51 @@
           "media_type": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Post_mediaEntity": {
+        "type": "object",
+        "properties": {
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modified_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "post_media_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "posts_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "media_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "media_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "posts": {
+            "$ref": "#/components/schemas/PostsEntity"
           }
         },
         "additionalProperties": false
@@ -213,12 +488,10 @@
             "nullable": true
           },
           "privacy": {
-            "type": "integer",
-            "format": "int32"
+            "$ref": "#/components/schemas/PostPrivacy"
           },
           "status": {
-            "type": "integer",
-            "format": "int32"
+            "$ref": "#/components/schemas/PostStatus"
           },
           "media_count": {
             "type": "integer",
@@ -236,6 +509,27 @@
           },
           "user": {
             "$ref": "#/components/schemas/UserEntity"
+          },
+          "medias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Post_mediaEntity"
+            },
+            "nullable": true
+          },
+          "likes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Post_likesEntity"
+            },
+            "nullable": true
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Post_commentsEntity"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -279,6 +573,25 @@
             "nullable": true
           },
           "user_password": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_avatar": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserPublicDTO": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "user_fullName": {
             "type": "string",
             "nullable": true
           },

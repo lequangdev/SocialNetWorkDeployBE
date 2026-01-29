@@ -8,6 +8,7 @@ namespace DTO
 {
     public class Post_mediaDTO
     {
+        public Guid? post_media_id { get; set; }
         public string media_url { get; set; } = null!;
         public string? media_type { get; set; }
     }

@@ -15,13 +15,19 @@ namespace Domain
         public Guid? posts_id { get; set; }
         public Guid? user_id { get; set; }
         public string? content { get; set; }
-        public int privacy { get; set; } 
-        public int status { get; set; } 
+        public PostPrivacy privacy { get; set; } 
+        public PostStatus status { get; set; } 
         public int media_count { get; set; } = 0;
         public int? like_count { get; set; } = 0;
         public int? comment_count { get; set; } = 0;
 
         [ForeignKey("user_id")]
         public UserEntity user { get; set; }
+        public ICollection<Post_mediaEntity> medias { get; set; }
+        = new List<Post_mediaEntity>();
+        public ICollection<Post_likesEntity> likes { get; set; }
+        = new List<Post_likesEntity>();
+        public ICollection<Post_commentsEntity> comments { get; set; }
+        = new List<Post_commentsEntity>();
     }
 }

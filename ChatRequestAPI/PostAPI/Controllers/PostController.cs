@@ -45,6 +45,18 @@ namespace PostAPI.Controllers
                 throw;
             }
         }
+        [HttpGet("GetAllPostsDetail")]
+        public Task<List<PostDTO>> GetAllPostsDetail()
+        {
+            try
+            {
+                return _postService.GetAllPostsDetail();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
     }
 }

@@ -34,13 +34,13 @@ namespace ServiceLayer
                     posts_id = post_id,
                     user_id = payload.user_id,
                     content = payload.content,
-                    status = 1,
+                    status = PostStatus.Active,
                     media_count = payload.mediaDTOs.Count,
-                    privacy = 1,
+                    privacy = payload.privacy,
                 };
                     await _postRepo.InsertPost(post);
    
-                if(payload.media_count > 0)
+                if(post.media_count > 0)
                 {
                     List<Post_mediaEntity> postMediaList = new List<Post_mediaEntity>();
                     foreach (var media in payload.mediaDTOs)
@@ -64,7 +64,9 @@ namespace ServiceLayer
                 throw; 
             }
         }
-
-
+        public Task<List<PostDTO>> GetAllPostsDetail()
+        {
+            return _postRepo.GetAllPostsDetail();
+        }
     }
 }

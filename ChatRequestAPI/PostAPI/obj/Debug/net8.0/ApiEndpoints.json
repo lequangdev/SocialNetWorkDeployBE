@@ -21,6 +21,26 @@
   },
   {
     "ContainingType": "PostAPI.Controllers.PostController",
+    "Method": "GetAllPostsDetail",
+    "RelativePath": "api/Post/GetAllPostsDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DTO.PostDTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PostAPI.Controllers.PostController",
     "Method": "InsertPost",
     "RelativePath": "api/Post/InsertPost",
     "HttpMethod": "POST",
