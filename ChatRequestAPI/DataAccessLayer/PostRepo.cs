@@ -2,6 +2,7 @@
 using DataAccessLayer.Interfaces;
 using Domain;
 using DTO;
+using Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace DataAccessLayer
             var result = await _dbContext.posts.Where(p => p.user_id == user_id).ToListAsync();
             return result;
         }
-        public async Task<List<PostDTO>> GetAllPostsDetail()
+        public async Task<List<PostDTO>> GetAllPostsDetailPubllic()
         {
             var posts = await _dbContext.posts
             .Select(p => new PostDTO
@@ -64,7 +65,7 @@ namespace DataAccessLayer
                     user_id = c.user_id,
                     content = c.content
                 }).ToList(),
-            })
+            }).Where(x => x.status == PostEnum.PostStatus.Active && x.privacy == PostEnum.PostPrivacy.Public).OrderByDescending(x => x.created_date)
             .ToListAsync();
 
             return posts;

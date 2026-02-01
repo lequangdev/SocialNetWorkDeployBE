@@ -21,8 +21,8 @@
   },
   {
     "ContainingType": "PostAPI.Controllers.PostController",
-    "Method": "GetAllPostsDetail",
-    "RelativePath": "api/Post/GetAllPostsDetail",
+    "Method": "GetAllPosGetAllPostsDetailPubllictsDetail",
+    "RelativePath": "api/Post/GetAllPostsDetailPubllic",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -64,9 +64,9 @@ namespace ServiceLayer
                 throw; 
             }
         }
-        public Task<List<PostDTO>> GetAllPostsDetail()
+        public Task<List<PostDTO>> GetAllPostsDetailPubllic()
         {
-            return _postRepo.GetAllPostsDetail();
+            return _postRepo.GetAllPostsDetailPubllic();
         }
     }
 }

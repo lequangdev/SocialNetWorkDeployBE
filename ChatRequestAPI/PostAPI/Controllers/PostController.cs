@@ -45,12 +45,12 @@ namespace PostAPI.Controllers
                 throw;
             }
         }
-        [HttpGet("GetAllPostsDetail")]
-        public Task<List<PostDTO>> GetAllPostsDetail()
+        [HttpGet("GetAllPostsDetailPubllic")]
+        public async Task<List<PostDTO>> GetAllPosGetAllPostsDetailPubllictsDetail()
         {
             try
             {
-                return _postService.GetAllPostsDetail();
+                return await _postService.GetAllPostsDetailPubllic();
             }
             catch (Exception ex)
             {

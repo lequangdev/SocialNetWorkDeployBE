@@ -75,7 +75,7 @@ namespace ServiceLayer
             return result;
         }
 
-        public async Task<TEntity> GetByID(Guid ID)
+        public virtual async Task<TEntity> GetByID(Guid ID)
         {
            return await _repo.GetByID(ID);
         }

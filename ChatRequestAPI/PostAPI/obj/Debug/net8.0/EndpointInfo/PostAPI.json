@@ -91,7 +91,7 @@
         }
       }
     },
-    "/api/Post/GetAllPostsDetail": {
+    "/api/Post/GetAllPostsDetailPubllic": {
       "get": {
         "tags": [
           "Post"

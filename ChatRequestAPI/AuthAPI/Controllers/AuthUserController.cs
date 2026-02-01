@@ -121,6 +121,7 @@ namespace AuthAPI.Controllers
             }
 
         }
+
         [HttpGet("test")]
         public async Task<bool> test([FromHeader] string payload)
         {

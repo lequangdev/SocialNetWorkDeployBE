@@ -11,6 +11,6 @@ namespace ServiceLayer.Interfaces
     public interface IPostService : IBaseService<PostsEntity>
     {
         public Task<bool> InsertPost(PostDTO payload);
-        public Task<List<PostDTO>> GetAllPostsDetail();
+        public Task<List<PostDTO>> GetAllPostsDetailPubllic();
     }
 }

@@ -56,5 +56,11 @@ namespace ServiceLayer
         {
             return await _UserRepo.GetUserByFullname(payload);
         }
+        public async override Task<UserEntity> GetByID(Guid ID)
+        {
+            var result = await _UserRepo.GetByID(ID);
+            result.user_password = null;
+            return result;
+        }
     }
 }
