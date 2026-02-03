@@ -505,8 +505,7 @@
               "RelativeToolTip": "ReverseProxy\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T01:57:08.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T01:57:08.726Z"
             },
             {
               "$type": "Document",
@@ -518,8 +517,7 @@
               "RelativeToolTip": "PostAPI\\Controllers\\PostController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:27:08.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T13:27:08.661Z"
             },
             {
               "$type": "Document",
@@ -531,8 +529,7 @@
               "RelativeToolTip": "ServiceLayer\\PostService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowEcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:48:45.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T07:48:45.653Z"
             },
             {
               "$type": "Document",
@@ -544,8 +541,7 @@
               "RelativeToolTip": "AuthAPI\\Controllers\\AuthUserController.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAowHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T03:36:19.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T03:36:19.72Z"
             },
             {
               "$type": "Document",
@@ -557,8 +553,7 @@
               "RelativeToolTip": "ServiceLayer\\Room_chatService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:57:53.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T07:57:53.289Z"
             },
             {
               "$type": "Document",
@@ -568,7 +563,7 @@
               "RelativeDocumentMoniker": "ServiceLayer\\UserService.cs",
               "ToolTip": "D:\\SocialNetwork\\backend\\ChatRequestAPI\\ServiceLayer\\UserService.cs",
               "RelativeToolTip": "ServiceLayer\\UserService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAkwD8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T07:59:05.036Z",
               "EditorCaption": ""
@@ -583,8 +578,7 @@
               "RelativeToolTip": "ServiceLayer\\BaseService.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAuwFAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T04:02:42.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T04:02:42.525Z"
             },
             {
               "$type": "Document",
@@ -632,8 +626,7 @@
               "RelativeToolTip": "ReverseProxy\\appsettings.Development.json",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAAGgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-20T02:33:35.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T02:33:35.974Z"
             },
             {
               "$type": "Document",
@@ -1497,8 +1490,7 @@
               "RelativeToolTip": "Infrastructure\\RabitMq\\MessageBus\\Consumers\\Consumer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T03:35:54.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T03:35:54.912Z"
             },
             {
               "$type": "Document",
