@@ -1,38 +1,17 @@
-# Stage 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy tất cả các project trước (để tránh restore lại nhiều lần)
-COPY PostAPI/PostAPI.csproj PostAPI/
-COPY Infrastructure/Infrastructure.csproj Infrastructure/
-COPY DTO/DTO.csproj DTO/
-COPY Domain/Domain.csproj Domain/
-COPY ServiceLayer/ServiceLayer.csproj ServiceLayer/
-COPY DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
-COPY HostBase/HostBase.csproj HostBase/
-COPY Shared/Enums/Enums.csproj Enums/
+# Copy toàn bộ source
+COPY . .
 
-# Restore chỉ project này
+# Restore & publish đúng service
 RUN dotnet restore PostAPI/PostAPI.csproj
+RUN dotnet publish PostAPI/PostAPI.csproj -c Release -o /app/publish
 
-# Copy toàn bộ source code
-COPY PostAPI/ PostAPI/
-COPY Infrastructure/ Infrastructure/
-COPY DTO/ DTO/
-COPY Domain/ Domain/
-COPY ServiceLayer/ ServiceLayer/
-COPY DataAccessLayer/ DataAccessLayer/
-COPY HostBase/ HostBase/
-COPY Shared/Enums/ Enums/
 
-WORKDIR /src/PostAPI
-RUN dotnet publish -c Release -o /app/publish
-
-# Stage 2: Runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0  AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 ENV ASPNETCORE_URLS=http://0.0.0.0:${PORT}
-COPY --from=build /app/publish ./
-# optional: expose port (informational)
 
-ENTRYPOINT ["dotnet", "PostAPI.dll"]
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "AuthAPI.dll"]
