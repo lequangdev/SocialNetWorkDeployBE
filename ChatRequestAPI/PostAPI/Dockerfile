@@ -10,7 +10,7 @@ COPY Domain/Domain.csproj Domain/
 COPY ServiceLayer/ServiceLayer.csproj ServiceLayer/
 COPY DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
 COPY HostBase/HostBase.csproj HostBase/
-COPY Shared/Shared.csproj Shared/
+COPY Shared/Enums/Enums.csproj Enums/
 
 # Restore chỉ project này
 RUN dotnet restore PostAPI/PostAPI.csproj
@@ -23,7 +23,8 @@ COPY Domain/ Domain/
 COPY ServiceLayer/ ServiceLayer/
 COPY DataAccessLayer/ DataAccessLayer/
 COPY HostBase/ HostBase/
-COPY Shared/ Shared/
+COPY Shared/Enums/ Enums/
+
 WORKDIR /src/PostAPI
 RUN dotnet publish -c Release -o /app/publish
 
