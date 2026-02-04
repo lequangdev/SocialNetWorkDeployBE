@@ -10,7 +10,7 @@ COPY Domain/Domain.csproj Domain/
 COPY ServiceLayer/ServiceLayer.csproj ServiceLayer/
 COPY DataAccessLayer/DataAccessLayer.csproj DataAccessLayer/
 COPY HostBase/HostBase.csproj HostBase/
-COPY Enums/Enums.csproj Enums/
+COPY Shared/Shared.csproj Shared/
 
 # Restore chỉ project này
 RUN dotnet restore ChatAPI/ChatAPI.csproj
@@ -23,7 +23,7 @@ COPY Domain/ Domain/
 COPY ServiceLayer/ ServiceLayer/
 COPY DataAccessLayer/ DataAccessLayer/
 COPY HostBase/ HostBase/
-COPY Enums/ Enums/
+COPY Shared/ Shared/
 WORKDIR /src/ChatAPI
 RUN dotnet publish -c Release -o /app/publish 
 
