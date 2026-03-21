@@ -3,6 +3,7 @@ using DTO;
 using Infrastructure.RabitMq.MessageBus.Events;
 using Infrastructure.RabitMq.MessageBus.Events.Constants;
 using Infrastructure.RabitMq.MessageBus.Producers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer;
 using ServiceLayer.Interfaces;
@@ -45,6 +46,7 @@ namespace PostAPI.Controllers
                 throw;
             }
         }
+
         [HttpGet("GetAllPostsDetailPubllic")]
         public async Task<List<PostDTO>> GetAllPosGetAllPostsDetailPubllictsDetail()
         {

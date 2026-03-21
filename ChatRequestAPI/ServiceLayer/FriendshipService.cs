@@ -65,6 +65,10 @@ namespace ServiceLayer
         {
             return await _friendshipRepo.GetFriendByUser_id(id);
         }
+        public async Task<List<UserEntity>> GetFriendRequestByUser_id(Guid id)
+        {
+            return await _friendshipRepo.GetFriendRequestByUser_id(id);
+        }
 
     }
 }

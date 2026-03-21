@@ -93,6 +93,7 @@ namespace ChatAPI
         {
             var connectionsOfB = ConnectUserService.GetConnections(friendship.friend_id.ToString()!);
             var resultDB = await _friendshipService.Insert([friendship]);
+            
             if (resultDB)
             {
                 foreach (var connectionId in connectionsOfB)

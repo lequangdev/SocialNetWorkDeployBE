@@ -243,6 +243,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AuthAPI.Controllers.FriendshipController",
+    "Method": "GetFriendRequestByUser_id",
+    "RelativePath": "api/Friendship/GetFriendRequestByUser_id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HostBase.Controller.BaseApi\u00601[[Domain.FriendshipEntity, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "UpdateByID",
     "RelativePath": "api/Friendship/UpdateByID",

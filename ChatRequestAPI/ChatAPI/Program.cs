@@ -106,7 +106,6 @@ IWebHostEnvironment environment = app.Environment;
 app.UseRouting();
 app.MapControllers();
 app.UseAuthentication();
-//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.MapHub<MessageHub>("/hubs/chat");

@@ -87,6 +87,15 @@ namespace DataAccessLayer
             await _dbContext.SaveChangesAsync();
             return true;
         }
+        public async Task<List<UserEntity>> GetFriendRequestByUser_id(Guid id)
+        {
+            var result = await _dbContext.friendship
+                .Where(f => f.friend_id == id && f.status == "1")
+                .Select(f => f.user)
+                .Distinct()
+                .ToListAsync();
+            return result;
+        }
     }
 
 }

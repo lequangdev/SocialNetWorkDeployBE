@@ -14,5 +14,6 @@ namespace DataAccessLayer.Interfaces
         Task<bool> AcceptFriendship(FriendDTO friendship);
         Task<List<UserEntity>> GetFriendByUser_id(Guid id);
         Task<bool> NotAcceptFriendship(FriendDTO friendship);
+        Task<List<UserEntity>> GetFriendRequestByUser_id(Guid id);
     }
 }

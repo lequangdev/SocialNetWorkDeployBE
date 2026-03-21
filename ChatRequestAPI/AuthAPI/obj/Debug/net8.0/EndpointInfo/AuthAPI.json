@@ -372,6 +372,28 @@
         }
       }
     },
+    "/api/Friendship/GetFriendRequestByUser_id": {
+      "get": {
+        "tags": [
+          "Friendship"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Friendship": {
       "post": {
         "tags": [

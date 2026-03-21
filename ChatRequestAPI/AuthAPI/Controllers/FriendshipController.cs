@@ -55,6 +55,20 @@ namespace AuthAPI.Controllers
                 return StatusCode(500, new { message = "Internal server error", error = ex.Message });
             }
         }
+        [HttpGet("GetFriendRequestByUser_id")]
+        public async Task<IActionResult> GetFriendRequestByUser_id([FromHeader] Guid id)
+        {
+            try
+            {
+                var result = await _friendshipService.GetFriendRequestByUser_id(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error", error = ex.Message });
+            }
+        }
+
 
     }
 }
