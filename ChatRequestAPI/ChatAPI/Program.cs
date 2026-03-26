@@ -47,6 +47,8 @@ builder.Services.AddScoped<IRoom_chatRepo, Room_chatRepo>();
 builder.Services.AddScoped<IRoom_userRepo, Room_userRepo>();
 builder.Services.AddScoped<IFriendshipService, FriendshipService>();
 builder.Services.AddScoped<IFriendshipRepo, FriendshipRepo>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<ICommentRepo, CommentRepo>();
 
 
 // Add services to the container.
