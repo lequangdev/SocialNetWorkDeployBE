@@ -29,6 +29,7 @@ namespace ChatRequestAPI.Controllers
         private readonly IMessageService _messageService;
         private readonly IRoom_UserService _room_userService;
         private readonly IHubContext<MessageHub> _hubContext;
+        private readonly ICommentService _commentService;
         public ChatController
         (
             IProducer producer, ISmsService smsService,
@@ -37,8 +38,8 @@ namespace ChatRequestAPI.Controllers
             IResponseCacheService responseCacheService,
             IMessageService messageService,
             IRoom_UserService room_userService,
-            IHubContext<MessageHub> hubContext
-
+            IHubContext<MessageHub> hubContext,
+            ICommentService commentService
         ) : base(messageService)
         {
             _producer = producer;
@@ -49,7 +50,7 @@ namespace ChatRequestAPI.Controllers
             _responseCacheService = responseCacheService;
             _room_userService = room_userService;
             _hubContext = hubContext;
-
+            _commentService = commentService;
         }
 
         [HttpPost("RoomUser")]
@@ -116,8 +117,19 @@ namespace ChatRequestAPI.Controllers
                 return StatusCode(500, new { message = "Internal server error", error = ex.Message });
             }
         }
-
-
+        [HttpGet("GetAllCommentByPost_id")]
+        public async Task<ActionResult<List<Post_commentsEntity>>> GetAllCommentByPost_id([FromHeader]Guid room_id)
+        {
+            try
+            {
+                var result = await _commentService.GetAllCommentByPost_id(room_id);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error", error = ex.Message });
+            }
+        }
 
     }
 
