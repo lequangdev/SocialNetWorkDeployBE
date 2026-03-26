@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessLayer.EF_core;
+﻿using DataAccessLayer.EF_core;
 using DataAccessLayer.Interfaces;
 using Domain;
+using DTO;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace DataAccessLayer
@@ -95,6 +97,42 @@ namespace DataAccessLayer
         {
             var result = await _dbContext.Set<TEntity>().FindAsync(ID);
             return result!;
+        }
+        public async Task<List<TEntity>> GetByCondition(List<FilterCondition> filters)
+        {
+            IQueryable<TEntity> query = _dbContext.Set<TEntity>();
+
+            if (filters != null && filters.Any())
+            {
+                ParameterExpression param = Expression.Parameter(typeof(TEntity), "x");
+                Expression finalExpression = null;
+
+                foreach (var filter in filters)
+                {
+                    var property = Expression.Property(param, filter.Field);
+                    var constant = Expression.Constant(Convert.ChangeType(filter.Value, property.Type));
+
+                    Expression comparison = filter.Operator switch
+                    {
+                        "=" => Expression.Equal(property, constant),
+                        ">" => Expression.GreaterThan(property, constant),
+                        "<" => Expression.LessThan(property, constant),
+                        ">=" => Expression.GreaterThanOrEqual(property, constant),
+                        "<=" => Expression.LessThanOrEqual(property, constant),
+                        "Contains" => Expression.Call(property, "Contains", null, constant),
+                        _ => throw new NotSupportedException($"Operator {filter.Operator} not supported")
+                    };
+
+                    finalExpression = finalExpression == null
+                        ? comparison
+                        : Expression.AndAlso(finalExpression, comparison);
+                }
+
+                var lambda = Expression.Lambda<Func<TEntity, bool>>(finalExpression, param);
+                query = query.Where(lambda);
+            }
+
+            return await query.ToListAsync();
         }
     }
 }

@@ -14,10 +14,12 @@ namespace ChatAPI
     {
         private readonly IMessageService _messageService;
         private readonly IFriendshipService _friendshipService;
-        public MessageHub( IMessageService messageService, IFriendshipService friendshipService)
+        private readonly ICommentService _commentService;
+        public MessageHub( IMessageService messageService, IFriendshipService friendshipService, ICommentService commentService)
         {
             _messageService = messageService;
             _friendshipService = friendshipService;
+            _commentService = commentService;
         }
 
         public override Task OnConnectedAsync()
@@ -54,6 +56,21 @@ namespace ChatAPI
                 if (result)
                 {
                     await Clients.Group($"{message.room_id}").SendAsync("ReceiveMessage", message);
+                }
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+        public async Task SendCommentPostAsync(Post_commentsEntity message)
+        {
+            try
+            {
+                var result = await _commentService.Insert([message]);
+                if (result)
+                {
+                    await Clients.Group($"{message.posts_id}").SendAsync("ReceiveCommentPost", message);
                 }
             }
             catch (Exception ex)

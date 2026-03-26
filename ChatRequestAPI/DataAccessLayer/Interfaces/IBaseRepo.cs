@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Domain;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain;
 
 namespace DataAccessLayer.Interfaces
 {
@@ -14,5 +15,6 @@ namespace DataAccessLayer.Interfaces
         Task<bool> DeleteByID(Guid ID);
         Task<List<TEntity>> GetAll();
         Task<TEntity> GetByID(Guid ID);
+        Task<List<TEntity>> GetByCondition(List<FilterCondition> filters);
     }
 }
