@@ -24,6 +24,6 @@ namespace DataAccessLayer.EF_core
             );
 
             return services;
-        }
+        }  
     }
 }

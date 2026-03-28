@@ -63,7 +63,10 @@ namespace DataAccessLayer
                 {
                     post_comments_id = c.post_comments_id,
                     user_id = c.user_id,
-                    content = c.content
+                    content = c.content,
+                    user_fullName = c.user.user_fullName,
+                    user_avatar = c.user.user_avatar,
+                    created_date = c.created_date
                 }).ToList(),
             }).Where(x => x.status == PostEnum.PostStatus.Active && x.privacy == PostEnum.PostPrivacy.Public).OrderByDescending(x => x.created_date)
             .ToListAsync();

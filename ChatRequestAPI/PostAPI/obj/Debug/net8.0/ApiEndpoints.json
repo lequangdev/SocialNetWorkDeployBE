@@ -21,6 +21,32 @@
   },
   {
     "ContainingType": "PostAPI.Controllers.PostController",
+    "Method": "GetAllCommentByPost_id",
+    "RelativePath": "api/Post/GetAllCommentByPost_id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room_id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.Post_commentsEntity, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PostAPI.Controllers.PostController",
     "Method": "GetAllPosGetAllPostsDetailPubllictsDetail",
     "RelativePath": "api/Post/GetAllPostsDetailPubllic",
     "HttpMethod": "GET",

@@ -117,19 +117,7 @@ namespace ChatRequestAPI.Controllers
                 return StatusCode(500, new { message = "Internal server error", error = ex.Message });
             }
         }
-        [HttpGet("GetAllCommentByPost_id")]
-        public async Task<ActionResult<List<Post_commentsEntity>>> GetAllCommentByPost_id([FromHeader]Guid room_id)
-        {
-            try
-            {
-                var result = await _commentService.GetAllCommentByPost_id(room_id);
-                return result;
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Internal server error", error = ex.Message });
-            }
-        }
+       
 
     }
 
