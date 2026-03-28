@@ -16,11 +16,14 @@ namespace PostAPI.Controllers
     {
         private readonly IProducer _producer;
         private readonly IPostService _postService;
+        private readonly ICommentService _commentService;
 
-        public PostController(IProducer producer, IPostService postService)
+        public PostController(IProducer producer, IPostService postService, ICommentService commentService)
         {
             _postService = postService;
             _producer = producer;
+            _commentService = commentService;
+
         }
         [HttpPost("InsertPost")]
         public async Task<bool> InsertPost(PostDTO payload)
@@ -57,6 +60,20 @@ namespace PostAPI.Controllers
             catch (Exception ex)
             {
                 throw;
+            }
+        }
+
+        [HttpGet("GetAllCommentByPost_id")]
+        public async Task<ActionResult<List<Post_commentsEntity>>> GetAllCommentByPost_id([FromHeader] Guid room_id)
+        {
+            try
+            {
+                var result = await _commentService.GetAllCommentByPost_id(room_id);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error", error = ex.Message });
             }
         }
 

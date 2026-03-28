@@ -30,6 +30,8 @@ builder.Services.AddScoped<ISmsService, SmsService>();
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<IPostRepo, PostRepo>();
 builder.Services.AddScoped<IPost_mediaRepo, Post_mediaRepo>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<ICommentRepo, CommentRepo>();
 
 
 

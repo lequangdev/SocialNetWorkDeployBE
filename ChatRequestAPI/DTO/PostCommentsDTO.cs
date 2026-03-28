@@ -13,5 +13,8 @@ namespace DTO
         public Guid user_id { get; set; }
         public string content { get; set; }
         public PostStatus status { get; set; } = PostStatus.Active;
+        public DateTime? created_date { get; set; }
+        public string user_fullName { get; set; }
+        public string user_avatar { get;set; }
     }
 }
