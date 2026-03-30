@@ -96,7 +96,7 @@ namespace DataAccessLayer
         public async Task<TEntity> GetByID(Guid ID)
         {
             var result = await _dbContext.Set<TEntity>().FindAsync(ID);
-            return result!;
+            return Activator.CreateInstance<TEntity>();
         }
         public async Task<List<TEntity>> GetByCondition(List<FilterCondition> filters)
         {
